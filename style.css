@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-weight: var(--fw-400);
+    background-color: lightgray;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+.testimonial-grid {
+    grid-template-areas:
+    "one one two five"
+    "three four four five";
+}
+.testimonial-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+.testimonial.quote {
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+.testimonial:nth-child(1) {
+    grid-area: one;
+}
+.testimonial {
+    font-size: 10px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem;
+    height: 300px;
+}
+.text-neutral-100 {
+    color: white;
+}
+.bg-primary-400 {
+    background-color: rgb(122, 22, 180);
+}
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.testimonial .name {
+    font-size: 15px;
+    font-weight: var(--fw-400);
+    line-height: 1;
+}
+.testimonial .position {
+    font-size: var(--fs-300);
+    opacity: 0.5;
+}
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd{
+
+    margin: 0;
+}
+.testimonial > p:first-of-type {
+    font-size: 20px;
+    line-height: 1.2;
+}
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-spacer, 1em);
+}
+.testimonial > p:last-of-type {
+    opacity: 0.7;
+    font-size: 15px;
+}
+.testimonial:nth-child(2) {
+    grid-area: two;
+}
+.bg-secondary-400 {
+    background-color: rgb(51, 51, 51);
+}
+.testimonial img {
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.testimonial:nth-child(3) {
+    grid-area: three;
+}
+.text-secondary-400 {
+    height: fit-content;
+    color: darkslategrey;
+}
+.bg-neutral-100 {
+    background-color: white;
+    object-fit: cover;
+}
+.testimonial:nth-child(4) {
+    grid-area: four;
+}
+.bg-secondary-500 {
+    background-color: darkslategray;
+}
+.border-primary-400 {
+    border: 2px solid #a775f1;
+}
+.testimonial:nth-child(5) {
+    grid-area: five;
+}
